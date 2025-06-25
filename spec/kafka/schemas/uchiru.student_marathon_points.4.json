@@ -1,0 +1,47 @@
+{
+  "type": "record",
+  "name": "student_marathon_points",
+  "namespace": "uchiru",
+  "doc": "Student sync marathon_points",
+  "fields": [
+    {
+      "name": "student_id",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "student_account_id",
+      "type": [
+        "null",
+        {
+          "type": "string",
+          "logicalType": "UUID"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "marathon_points",
+      "type": "int"
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "subject_id",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    }
+  ]
+}
